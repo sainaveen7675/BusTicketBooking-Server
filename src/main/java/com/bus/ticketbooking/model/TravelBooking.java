@@ -26,6 +26,7 @@ public class TravelBooking {
 	private String departureTime;
 	private String seatNo;
 	private String amountPaid;
+	private String transactionID;
 
 	// Constructors, getters, setters, and other methods can be added as needed.
 
@@ -33,9 +34,11 @@ public class TravelBooking {
 	public TravelBooking() {
 	}
 
+
+
 	// Parameterized constructor
 	public TravelBooking(String name, String email, String mobile, String gender, String age, String boardingPoint,
-			String droppingPoint, String departureDate, String departureTime, String seatNo, String amountPaid) {
+			String droppingPoint, String departureDate, String departureTime, String seatNo, String amountPaid, String transactionID) {
 		this.name = name;
 		this.email = email;
 		this.mobile = mobile;
@@ -47,6 +50,7 @@ public class TravelBooking {
 		this.departureTime = departureTime;
 		this.seatNo = seatNo;
 		this.amountPaid = amountPaid;
+		this.transactionID = transactionID;
 	}
 
 	public int getId() {
@@ -143,6 +147,14 @@ public class TravelBooking {
 
 	public void setAmountPaid(String amountPaid) {
 		this.amountPaid = amountPaid;
+	}
+
+	public String getTransactionID() {
+		return transactionID;
+	}
+
+	public void setTransactionID(String transactionID) {
+		this.transactionID = transactionID;
 	}
 
 }
